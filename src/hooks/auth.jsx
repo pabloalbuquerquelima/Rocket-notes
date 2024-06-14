@@ -49,6 +49,7 @@ function AuthProvider({ children }) {
             localStorage.setItem("@by-notes:user", JSON.stringify(user));
             setData({ user, token: data.token });
             alert("Perfil atualizado!");
+            
         } 
         catch (error) {
         if(error.response) {
